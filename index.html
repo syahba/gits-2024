@@ -12,53 +12,52 @@
   <!-- navigation -->
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Product</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Inventory</a></li>
+      <li><a href="#" class="nav-item">Home</a></li>
+      <li><a href="#" class="nav-item">Product</a></li>
+      <li><a href="#" class="nav-item">Gallery</a></li>
+      <li><a href="#" class="nav-item">Blog</a></li>
+      <li><a href="#" class="nav-item">Inventory</a></li>
     </ul>
   </nav>
 
   <main>
     <!-- hero section -->
-    <section>
+    <section class="section" id="hero">
       <!-- title -->
-      <div>
-        <img src="" alt="">
-  
-        <div>
-          <h1 class="name-logo">Khalisa Syahba</h1>
-          <p class="job-title">Full Stack Developer</p>
+      <div class="title">
+        <img class="picture" src="./assets/images/khalisa-syahba.jpg" alt="profile-picture">
 
-          <!-- button to display form -->
-          <button type="button">Edit resume</button>
+        <div class="title-item">
+          <div class="profile">
+            <h1 class="name">Khalisa Syahba</h1>
+            <p>Full Stack Developer</p>
+          </div>
+
+          <div>
+            <button class="btn info" type="button">Kontak</button>
+            <button class="btn success" type="button">Resume</button>
+          </div>
         </div>
       </div>
-      
+
+
       <!-- resume -->
-      <div>
+      <div class="resume">
+        <div class="line"></div>
+
         <div class="resume-data">
           <p class="resume-label">Availability</p>
           <p class="resume-content">Full-time</p>
-        </div>
-  
-        <div class="resume-data">
+
           <p class="resume-label">Usia</p>
-          <p class="resume-content">19</p>
-        </div>
-  
-        <div class="resume-data">
+          <p class="resume-content">20</p>
+
           <p class="resume-label">Lokasi</p>
           <p class="resume-content">Jakarta</p>
-        </div>
-  
-        <div class="resume-data">
+
           <p class="resume-label">Pengalaman</p>
           <p class="resume-content">2</p>
-        </div>
-  
-        <div class="resume-data">
+
           <p class="resume-label">Email</p>
           <p class="resume-content">khalisasyahba@gmail.com</p>
         </div>
@@ -66,20 +65,20 @@
     </section>
 
     <!-- form section -->
-    <section>
+    <section class="section form">
       <!-- to edit resume -->
-      <form action="" id="resume">
+      <form action="" id="form" class="form-resume">
         <label for="name">Name</label>
         <input type="text" name="name">
 
-        <label for="role">role</label>
+        <label for="role">Role</label>
         <input type="text" name="role">
 
         <label for="availability">Availability</label>
         <input type="text" name="availability">
 
         <label for="age">Age</label>
-        <input type="text" name="age">
+        <input type="number" name="age">
 
         <label for="location">Location</label>
         <input type="text" name="location">
@@ -91,7 +90,7 @@
         <input type="email" name="email">
       </form>
 
-      <button type="submit" form="resume">Submit</button>
+      <button class="submit" type="submit" form="resume">Submit</button>
     </section>
   </main>
 </body>
