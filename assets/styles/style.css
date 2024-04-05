@@ -208,6 +208,5 @@ input {
 
   .resume-data {
     grid-template-columns: auto;
-    /* gap: .8em 4em; */
   }
 }
