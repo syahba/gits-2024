@@ -14,9 +14,8 @@ body {
 nav {
   display: flex;
   background-color: white;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   justify-content: end;
-  padding-right: 2rem;
   box-shadow: 0 0 10px 0 #0000002b;
 }
 
@@ -44,17 +43,18 @@ nav ul li {
 
 #hero {
   align-items: center;
-  gap: 20em;
+  gap: 5em;
 }
 
 /* title */
 .title {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .title-item {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 
 .picture {
@@ -73,7 +73,6 @@ nav ul li {
 
 .btn {
   padding: 10px 25px;
-  margin-right: .5rem;
   border-radius: 5px;
   transition: all .3s;
 }
@@ -86,6 +85,7 @@ nav ul li {
   background-color: blue;
   color: white;
   border: 1px solid blue;
+  margin-right: .5rem;
 }
 
 .success {
@@ -152,4 +152,62 @@ input {
   background-color: white;
   color: green;
   border: 1px solid green;
+}
+
+/* responsive */
+@media screen and (max-width: 980px) {
+  #hero {
+    gap: 1.5em;
+    justify-content: center;
+  }
+
+  .picture {
+    max-width: 25vw;
+  }
+  
+  .profile {
+    margin-bottom: 1rem;
+  }
+
+  .line {
+    width: 0;
+    height: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav ul li {
+    padding: 0 2px;
+  }
+
+  .profile {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .title-item {
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .info {
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+
+  .resume-data {
+    grid-template-columns: auto;
+    /* gap: .8em 4em; */
+  }
 }
