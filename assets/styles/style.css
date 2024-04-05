@@ -155,7 +155,7 @@ input {
 }
 
 /* responsive */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 930px) {
   #hero {
     gap: 1.5em;
     justify-content: center;
